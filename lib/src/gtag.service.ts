@@ -35,7 +35,7 @@ export class Gtag {
     try {
       const defaults = {
         page_path: this.router.url,
-        page_title: 'Angular App',
+        page_title: this.mergedConfig.defaultTitle ? this.mergedConfig.defaultTitle : 'Angular App',
         page_location: window.location.href
       };
 

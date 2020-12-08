@@ -15,5 +15,6 @@ export interface GtagPageview {
 export interface GtagConfig {
   trackingId: string;
   trackPageviews?: boolean;
+  defaultTitle?: string;
   debug?: boolean;
 }
