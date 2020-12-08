@@ -11,7 +11,7 @@ import { GtagConfig } from './interfaces';
   exports: [GtagEventDirective]
 })
 export class GtagModule {
-  public static forRoot(config: GtagConfig): ModuleWithProviders {
+  public static forRoot(config: GtagConfig): ModuleWithProviders<any> {
     return {
       ngModule: GtagModule,
       providers: [Gtag, { provide: 'config', useValue: config }]
